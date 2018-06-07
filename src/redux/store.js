@@ -11,6 +11,10 @@ const navigationMiddleware = createReactNavigationReduxMiddleware(
 
 const loggerMiddleware = createLogger();
 
+const goBackMiddleware = store => next => action => {
+  
+}
+
 const middleware = applyMiddleware(
   navigationMiddleware,
   loggerMiddleware,
